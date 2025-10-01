@@ -1,29 +1,28 @@
-- Team Name: Exodia
+# They Are & Bastion (Custom C++)
 
-- Game Name: Bastion
+This repository contains **two projects in one history**:
 
--Team Member List
-Jaeyong Lee
-Hyeonjoon Nam
-Taeho Kim
-Junyoung Cho
-Seunghoon kwon
+- **They Are (Sep–Dec 2023)** — Top-down defense with massively optimized **A\*** via a **singleton path manager**.  
+  👉 Code snapshot: [`they-are-1.0`](https://github.com/Hyeonjoon-Nam/GAM250-Bastion/tree/they-are-1.0)
 
-- Compilation Instructions						
-Open cmd, and follow the instructions at README_COMPILE.md.
-Then you can make sln file.
+- **Bastion (Mar–Jun 2024)** — Loop-route defense with **data-driven merge** and **state-based transitions**, plus **text-file parsing** for iteration speed.  
+  👉 Current code: [`main`](https://github.com/Hyeonjoon-Nam/GAM250-Bastion/tree/main)
 
-PLS READ README_COMPILE.md before you compile.
+---
 
+## They Are — Summary
+**Impact:** Replaced per-frame per-agent A\* with a **singleton path manager**, reducing pathfinding cost by **99.9%+**.  
+**Highlights:** Wave/Map systems, diverse enemy patterns, **text-file parsing** for balancing.  
+**Benchmarks:** Reduced runtime by **~5,900×** (100 monsters × 240 frames) up to 25,000× faster in stress tests.  
+➡ Full logs: [`benchmarks/bench_results.txt`](./benchmarks/bench_results.txt)
 
-- Explanation of what the game is and how to play:
+## Bastion — Summary
+**Impact:** Refactored fragile merge logic into **data-driven mappings + state-based transitions**; externalized **wave/enemy/unit stats** via **text-file parsing** → faster iteration & fewer bugs.
 
-Here's the English translation of your description of the game:
+## Build / Run
+- Visual Studio 2019+ (C++17), x64 Debug/Release
+- Run from project root (adjust working directory if needed)
 
-Our game is a top-down tower defense game. Each predetermined stage features a specific number and type of enemies that attempt to destroy the fortress from the outside. If a certain number of enemies accumulate, the fortress will collapse and the game will end. Before the game starts, you can choose one item from the shop and select the stage you wish to play. Once the game begins, you can summon units by pressing a button at the bottom of the screen and drag units to merge them. Use the merged, strengthened towers to fend off the increasingly powerful waves of enemies.
-
-Tab: fastforward
-
-When you want to feedback to us. Contact with email.
-Producer : Jaeyong Lee
-Email :jaey0806@gmail.com
+> This repository mirrors our DigiPen project history for portfolio purposes.  
+> School-proprietary frameworks/assets are excluded where necessary.  
+> Credits to all teammates; see commit history for contributors.
