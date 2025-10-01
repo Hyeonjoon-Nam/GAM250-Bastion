@@ -1,0 +1,140 @@
+=== [BENCH] 시작: 2025-09-30 15:34:55 ===
+시나리오 개수: 10
+결과 파일: bench_results.txt (동일 폴더)
+---- [BENCH] 시나리오 1/10 시작: Singleton, Monsters=5, Frames=20 ----
+  > 경로 계산 1회 실행중...
+  > 경로 계산 완료. 프레임 루프 진입...
+    - 진행: frame 0/20
+    - 진행: frame 5/20
+    - 진행: frame 10/20
+    - 진행: frame 15/20
+  > 시나리오 완료
+    · A* calls: 1
+    · A* total(ms): 0.366500, avg per call(ms): 0.366500
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.617188 / 136.621094 / 0.003906
+    · Wall time(ms): 1.156600
+------------------------------------------------------
+---- [BENCH] 시나리오 2/10 시작: PerMonsterEveryFrame, Monsters=5, Frames=20 ----
+  > 프레임마다 모든 몬스터 경로 재계산 실행중...
+    - 진행: frame 0/20
+    - 진행: frame 5/20
+    - 진행: frame 10/20
+    - 진행: frame 15/20
+  > 시나리오 완료
+    · A* calls: 100
+    · A* total(ms): 35.611700, avg per call(ms): 0.356117
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 36.994100
+------------------------------------------------------
+---- [BENCH] 시나리오 3/10 시작: Singleton, Monsters=25, Frames=60 ----
+  > 경로 계산 1회 실행중...
+  > 경로 계산 완료. 프레임 루프 진입...
+    - 진행: frame 0/60
+    - 진행: frame 15/60
+    - 진행: frame 30/60
+    - 진행: frame 45/60
+  > 시나리오 완료
+    · A* calls: 1
+    · A* total(ms): 0.394400, avg per call(ms): 0.394400
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 1.596700
+------------------------------------------------------
+---- [BENCH] 시나리오 4/10 시작: PerMonsterEveryFrame, Monsters=25, Frames=60 ----
+  > 프레임마다 모든 몬스터 경로 재계산 실행중...
+    - 진행: frame 0/60
+    - 진행: frame 15/60
+    - 진행: frame 30/60
+    - 진행: frame 45/60
+  > 시나리오 완료
+    · A* calls: 1500
+    · A* total(ms): 530.044500, avg per call(ms): 0.353363
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 533.508300
+------------------------------------------------------
+---- [BENCH] 시나리오 5/10 시작: Singleton, Monsters=50, Frames=120 ----
+  > 경로 계산 1회 실행중...
+  > 경로 계산 완료. 프레임 루프 진입...
+    - 진행: frame 0/120
+    - 진행: frame 30/120
+    - 진행: frame 60/120
+    - 진행: frame 90/120
+  > 시나리오 완료
+    · A* calls: 1
+    · A* total(ms): 0.441000, avg per call(ms): 0.441000
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 1.422900
+------------------------------------------------------
+---- [BENCH] 시나리오 6/10 시작: PerMonsterEveryFrame, Monsters=50, Frames=120 ----
+  > 프레임마다 모든 몬스터 경로 재계산 실행중...
+    - 진행: frame 0/120
+    - 진행: frame 30/120
+    - 진행: frame 60/120
+    - 진행: frame 90/120
+  > 시나리오 완료
+    · A* calls: 6000
+    · A* total(ms): 2119.519600, avg per call(ms): 0.353253
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 2126.310600
+------------------------------------------------------
+---- [BENCH] 시나리오 7/10 시작: Singleton, Monsters=100, Frames=240 ----
+  > 경로 계산 1회 실행중...
+  > 경로 계산 완료. 프레임 루프 진입...
+    - 진행: frame 0/240
+    - 진행: frame 60/240
+    - 진행: frame 120/240
+    - 진행: frame 180/240
+  > 시나리오 완료
+    · A* calls: 1
+    · A* total(ms): 0.652400, avg per call(ms): 0.652400
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.621094 / 0.000000
+    · Wall time(ms): 1.834400
+------------------------------------------------------
+---- [BENCH] 시나리오 8/10 시작: PerMonsterEveryFrame, Monsters=100, Frames=240 ----
+  > 프레임마다 모든 몬스터 경로 재계산 실행중...
+    - 진행: frame 0/240
+    - 진행: frame 60/240
+    - 진행: frame 120/240
+    - 진행: frame 180/240
+  > 시나리오 완료
+    · A* calls: 24000
+    · A* total(ms): 8395.345200, avg per call(ms): 0.349806
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.621094 / 136.593750 / -0.027344
+    · Wall time(ms): 8413.552200
+------------------------------------------------------
+---- [BENCH] 시나리오 9/10 시작: Singleton, Monsters=300, Frames=300 ----
+  > 경로 계산 1회 실행중...
+  > 경로 계산 완료. 프레임 루프 진입...
+    - 진행: frame 0/300
+    - 진행: frame 75/300
+    - 진행: frame 150/300
+    - 진행: frame 225/300
+  > 시나리오 완료
+    · A* calls: 1
+    · A* total(ms): 0.439200, avg per call(ms): 0.439200
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.593750 / 136.593750 / 0.000000
+    · Wall time(ms): 1.557200
+------------------------------------------------------
+---- [BENCH] 시나리오 10/10 시작: PerMonsterEveryFrame, Monsters=300, Frames=300 ----
+  > 프레임마다 모든 몬스터 경로 재계산 실행중...
+    - 진행: frame 0/300
+    - 진행: frame 75/300
+    - 진행: frame 150/300
+    - 진행: frame 225/300
+  > 시나리오 완료
+    · A* calls: 90000
+    · A* total(ms): 31354.396300, avg per call(ms): 0.348382
+    · A* peak internal (approx MB): 0.005394
+    · Process RSS Begin/End/Δ (MB): 136.593750 / 136.617188 / 0.023438
+    · Wall time(ms): 31416.028500
+------------------------------------------------------
+=== [BENCH] 완료: 2025-09-30 15:35:38 (총 경과 42554.254400 ms) ===
+로그 파일에 저장됨: bench_results.txt
