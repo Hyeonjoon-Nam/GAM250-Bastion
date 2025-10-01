@@ -13,8 +13,8 @@ This repository contains **two projects in one history**:
 ## They Are — Summary
 **Impact:** Replaced per-frame per-agent A\* with a **singleton path manager**, reducing pathfinding cost by **99.9%+**.  
 **Highlights:** Wave/Map systems, diverse enemy patterns, **text-file parsing** for balancing.  
-**Benchmarks:** Reduced runtime by **~5,900×** (100 monsters × 240 frames) up to 25,000× faster in stress tests.  
-➡ Full logs: [`benchmarks/bench_results.txt`](./benchmarks/bench_results.txt)
+**Benchmarks:** Reduced runtime by ~5,900× (100 monsters × 240 frames), up to 25,000× faster in stress tests.  
+➡ Full logs: [`bench_results.txt`](./bench_results.txt)
 
 ## Bastion — Summary
 **Impact:** Refactored fragile merge logic into **data-driven mappings + state-based transitions**; externalized **wave/enemy/unit stats** via **text-file parsing** → faster iteration & fewer bugs.
